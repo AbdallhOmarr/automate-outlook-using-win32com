@@ -1,8 +1,16 @@
 import win32com.client as win32
 import os 
+import xlwings as xw
 
 
+
+
+@xw.func # xlwing function to run from excel
 def maill(file_name):
+
+    #wb = xw.Book.caller()
+    #sheet = wb.sheets.active
+
     __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
     
